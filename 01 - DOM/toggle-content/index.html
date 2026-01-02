@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Toggle-content</title>
+</head>
+<body>
+
+    <!-- Visible part when first loading -->
+    <h1>Toggle-content</h1>
+    <p>
+        The button below will verify if a section of the website is visibile or not.<br/>
+        If it is not, the action of pressing the button will modify the status (True, or False).<br/>
+        The button will function as a toggle element applying modification to the DOM of the website as to make it appear or disapear.
+    </p>
+
+    <!-- Element that will serve as a way to modify the state of an element at the action of the visitor -->
+    <button id="toggle-button" aria-expanded="false" aria-controls="toggle">Show</button>
+
+    <!-- Hidden part when first loading, state change when clicking the button -->
+
+    <section id="toggle" hidden>
+        <h2>It was meant to be hidden...</h2>
+        <p>
+            You've awaken a secret that none shall have laid eyes upon.<br> Are you sure that summoning that button capacity was the right thing to do ?
+        </p>
+    </section>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
