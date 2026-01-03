@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabs</title>
+</head>
+<body>
+    
+    <h1>Tabs</h1>
+
+    <nav id="tabs" role="tablist">
+        <button id="first-tab" class="button" data-tab="0" role="tab" aria-selected="true" aria-controls="tab0">Tab One</button>
+        <button id="second-tab" class="button" data-tab="1" role="tab" aria-selected="false" aria-controls="tab1">Tab Two</button>
+        <button id="third-tab" class="button" data-tab="2" role="tab" aria-selected="false" aria-controls="tab2">Tab Three</button>
+    </nav>
+
+    <section>
+        <article id="tab0" aria-labelledby="first-tab">
+            <p>
+                Welcome to the First Tab.
+            </p>
+        </article>
+        <article id="tab1" aria-labelledby="second-tab" hidden>
+            <p>
+                Welcome to the Second Tab.
+            </p>
+        </article>
+        <article id="tab2" aria-labelledby="third-tab" hidden>
+            <p>
+                Welcome to the Third Tab.
+            </p>
+        </article>
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

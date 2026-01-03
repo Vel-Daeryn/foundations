@@ -1,0 +1,44 @@
+:root {
+    --bg-color: #e1e1e1;
+    --text-color: #232323;
+    --border-color: #888;
+    --active-color: #1b7f02;
+}
+
+/* small reset + fast styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 80%;
+    min-width: 320px;
+    margin: 50px auto;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+button {
+    margin: 25px 0;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.active {
+    color: var(--active-color);
+}
+
+section {
+    font-size: 1.5rem;
+    padding: 25px;
+    border: 2px solid var(--border-color);
+}
